@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css">
+
+  <head>
+    <meta charset="utf-8">
+    <title>pedidos</title>
+  </head>
+  <body>
+    <div id="container">
+      <h2 id="icon1">ROMANIMARTE</h2>
+
+      <div id="romanimarte">
+<h1>ROMANIMARTE</h1>
+<textarea  id="t0" class="tit0"name="name" rows="10" cols="80">HOLA PARA LA QUINTONERIA DE CARRETERIA</textarea>
+<textarea  id="tbr" class="tit0"name="name" rows="10" cols="80"></textarea>
+
+ <input id="t1" class="tit1" placeholder="PECHUGA DE POLLO " type="text" name="" value="">
+<br><br>
+<input id="t2" class="tit1"placeholder="MUSLO DE POLLO " type="text" name="" value="">
+<br><br>
+<input id="t3" class="tit1"placeholder="ALITAS DE POLLO " type="text" name="" value="">
+<br><br>
+<input id="t4" class="tit1"placeholder="SALMON " type="text" name="" value="">
+<br><br>
+<input id="t5" class="tit1" placeholder="CRANE PICADA DE TERNERA " type="text" name="" value="">
+<br>
+<h2 id="send">SEND</h2>
+
+
+
+      </div>
+    </div>
+<script type="text/javascript">
+document.getElementById('send').onclick=function functionName(){
+setTimeout(scanromanimarte,10)
+
+}
+document.getElementById('icon1').onclick=function functionName(){
+  document.getElementById('romanimarte').style.display="inline-block";
+  document.getElementById('icon1').style.display="none";
+
+}
+function scanromanimarte(){
+
+  x0=document.getElementById('t0').value;
+  // xbr=document.getElementById('tbr').value;
+
+  x1=document.getElementById('t1').value;
+    x1p=document.getElementById('t1').placeholder;
+  x2= document.getElementById('t2').value;
+  x2p=document.getElementById('t2').placeholder;
+  x3= document.getElementById('t3').value;
+  x3p= document.getElementById('t3').placeholder;
+  x4= document.getElementById('t4').value;
+  x4p= document.getElementById('t4').placeholder;
+  x5= document.getElementById('t5').value;
+  x5p= document.getElementById('t5').placeholder;
+
+
+                // var messege = document.getElementById('messege').value
+           location.href="https://wa.me/34696273517?text="  + x0 +' ' + x1p + x1 +' '+x2p+ x2 + ' '+x3p+ x3 + x4p+ x4 + x5p+ x5
+  // alert(x1);
+  // alert(x2);
+  // alert(x3);
+  // alert(x4);
+  // alert(x5);
+
+
+
+
+
+
+}
+</script>
+  </body>
+</html>
