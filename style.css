@@ -12,19 +12,31 @@ body{margin:0px;padding:0px;border:0px;height:80px}
     border-width: 5px;
     border-color: white;
 }
-.tbr0{font-size: 0px;background-color: #7dd2ee;width:0px;height:0px; display: none; 
+.tbr0{font-size: 0px;background-color: #7dd2ee;width:0px;height:0px; display: none;
 }
 
 .tit0{font-size: 0px;background-color: #7dd2ee;width:0px;height:0px; display: none;}
-.tit1 {
-    line-height: 0%;
+.tit1 {transition: 1;opacity: 0;
+
     font-size: 25px;
     font-weight: bold;
     border-style: double;
-    background-color: none;
+    background-color: white;
     text-align: center;
+    animation: tit1;
+    animation-duration: 1s;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }
-#send{padding-top: 20px;padding-bottom: 20px;padding-right: 20px;padding-left: 20px;
+@keyframes tit1 {0%{opacity: 0;font-size: 0px;border-color: white;}
+100%{opacity: 1;font-size: 25;border-color: black}
+}
+
+
+#p1{background-color:#7dd2ee;font-size: 20px;}
+#send{padding-top: 20px;padding-bottom: 20px;padding-right: 20px;padding-left: 20px;transition: 1s;
+  opacity: 0;transform: rotate(0);
     background-color: white;
     position: absolute;
     display: inline-block;
@@ -36,7 +48,16 @@ body{margin:0px;padding:0px;border:0px;height:80px}
     font-size: 54px;
     top: 76%;
     left: 26%;
+animation: send;
+animation-duration: 1s;
+animation-timing-function:ease-in-out;
+animation-fill-mode: forwards;
+animation-play-state: running
 }
+@keyframes send {0%{opacity: 0;border-color: white;}
+100%{opacity: 1;border-color: black}
+}
+#send:hover{transform: rotate(360deg);}
 #icon1{padding-top: 20px;padding-bottom: 20px;padding-right: 20px;padding-left: 20px;
     background-color: white;
     position: absolute;

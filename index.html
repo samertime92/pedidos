@@ -14,7 +14,7 @@
       <div id="romanimarte">
 <h1>ROMANIMARTE</h1>
 <textarea  id="t0" class="tit0"name="name" rows="10" cols="80">HOLA PARA LA QUINTONERIA DE CARRETERIA</textarea>
-<textarea  id="tbr" class="tbr0"name="name" rows="10" cols="80">●</textarea>
+<textarea  id="tbr" class="tbr0"name="name" rows="10" cols="80">⫶⫶⫶⫶⫶⫶</textarea>
 
  <input id="t1" class="tit1" placeholder="PECHUGA DE POLLO " type="text" name="" value="">
 <br><br>
@@ -24,17 +24,36 @@
 <br><br>
 <input id="t4" class="tit1"placeholder="SALMON " type="text" name="" value="">
 <br><br>
-<input id="t5" class="tit1" placeholder="CRANE PICADA DE TERNERA " type="text" name="" value="">
+<input id="t5" class="tit1" placeholder="CARNE PICADA DE TERNERA " type="text" name="" value="">
 <br>
 <h2 id="send">SEND</h2>
-
+<p id="p1"> HOLA MICHEL </p>
 
 
       </div>
     </div>
 <script type="text/javascript">
+x0=document.getElementById('t0').value;
+ xbr=document.getElementById('tbr').value;
+
+x1=document.getElementById('t1').value;
+  x1p=document.getElementById('t1').placeholder;
+x2= document.getElementById('t2').value;
+x2p=document.getElementById('t2').placeholder;
+x3= document.getElementById('t3').value;
+x3p= document.getElementById('t3').placeholder;
+x4= document.getElementById('t4').value;
+x4p= document.getElementById('t4').placeholder;
+x5= document.getElementById('t5').value;
+x5p= document.getElementById('t5').placeholder;
 document.getElementById('send').onclick=function functionName(){
-setTimeout(scanromanimarte,10)
+  setTimeout(x1check,0.0001)
+  setTimeout(x2check,0.0001)
+  setTimeout(x3check,0.0001)
+  setTimeout(x4check,0.0001)
+  setTimeout(x5check,0.0001)
+
+ setTimeout(scanromanimarte,100)
 
 }
 document.getElementById('icon1').onclick=function functionName(){
@@ -42,35 +61,103 @@ document.getElementById('icon1').onclick=function functionName(){
   document.getElementById('icon1').style.display="none";
 
 }
-function scanromanimarte(){
-
-  x0=document.getElementById('t0').value;
-   xbr=document.getElementById('tbr').value;
-
+function x1check(){
   x1=document.getElementById('t1').value;
     x1p=document.getElementById('t1').placeholder;
-  x2= document.getElementById('t2').value;
-  x2p=document.getElementById('t2').placeholder;
-  x3= document.getElementById('t3').value;
-  x3p= document.getElementById('t3').placeholder;
-  x4= document.getElementById('t4').value;
-  x4p= document.getElementById('t4').placeholder;
-  x5= document.getElementById('t5').value;
-  x5p= document.getElementById('t5').placeholder;
+  if (x1==""){
+    x1="";
+      x1p="";
+
+  }
+  else{
+    x1=document.getElementById('t1').value;
+      x1p=document.getElementById('t1').placeholder;
+  }
+}
+function x2check(){
+  x2=document.getElementById('t2').value;
+    x2p=document.getElementById('t2').placeholder;
+  if (x2==""){
+    x2="";
+      x2p="";
+
+  }
+  else{
+    x2=document.getElementById('t2').value;
+      x2p=document.getElementById('t2').placeholder;
+  }
+}
+function x3check(){
+  x3=document.getElementById('t3').value;
+    x3p=document.getElementById('t3').placeholder;
+  if (x3==""){
+    x3="";
+      x3p="";
+
+  }
+  else{
+    x3=document.getElementById('t3').value;
+      x3p=document.getElementById('t3').placeholder;
+  }
+}
+function x4check(){
+  x4=document.getElementById('t4').value;
+    x4p=document.getElementById('t4').placeholder;
+  if (x4==""){
+    x4="";
+      x4p="";
+
+  }
+  else{
+    x4=document.getElementById('t4').value;
+      x4p=document.getElementById('t4').placeholder;
+  }
+}
+function x5check(){
+  x5=document.getElementById('t5').value;
+    x5p=document.getElementById('t5').placeholder;
+  if (x5==""){
+    x5="";
+      x5p="";
+
+  }
+  else{
+    x5=document.getElementById('t5').value;
+      x5p=document.getElementById('t5').placeholder;
+  }
+}
+function scanromanimarte(){
+  x1;
+    x1p;
+  x2;
+  x2p;
+  x3;
+  x3p;
+  x4;
+  x4p;
+  x5;
+  x5p;
+  location.href="https://wa.me/34696273517?text="  + x0  +' '+' '+   x1p +  x1 +' '+xbr+' '+ x2p + x2 +' '+xbr+ x3p+ x3 +' '+xbr+ x4p+ x4 +' '+xbr+ x5p+ x5+' '+xbr
 
 
-                // var messege = document.getElementById('messege').value
-           location.href="https://wa.me/34696273517?text="  + x0 +xbr +  x1p + x1 +xbr+ x2p + x2 +xbr+ x3p+ x3 +xbr+ x4p+ x4 +xbr+ x5p+ x5+xbr
-  // alert(x1);
-  // alert(x2);
-  // alert(x3);
-  // alert(x4);
-  // alert(x5);
+// if(x1==""){
+            // location.href="https://wa.me/34696273517?text="  + x0  +' '+x2p + x2 +' '+xbr+ x3p+ x3 +' '+xbr+ x4p+ x4 +' '+xbr+ x5p+ x5+' '
+           // alert(x1)
 
+ // else if(x2==""){
+   // location.href="https://wa.me/34696273517?text="  + x0  +' '+   x1p +  x1 +' '+xbr+' '+xbr+ x3p+ x3 +' '+xbr+ x4p+ x4 +' '+xbr+ x5p+ x5+' '}
+ // else if(x3==""){
+  // location.href="https://wa.me/34696273517?text="  + x0  +' '+  x1p +  x1 +' '+xbr+' '+ x2p + x2 +' '+xbr+ x4p+ x4 +' '+xbr+ x5p+ x5+' '
+ // }
+ // else if(x4==""){
+   // location.href="https://wa.me/34696273517?text="  + x0  +' '+   x1p +  x1 +' '+xbr+' '+xbr+ x3p+ x3 +' '+xbr+ x5p+ x5+' '}
 
+ // else if(x5==""){
+   // location.href="https://wa.me/34696273517?text="  + x0  +' '+' '+   x1p +  x1 +' '+xbr+' '+ x2p + x2 +' '+xbr+ x3p+ x3 +' '+xbr+ x4p+ x4 +' '+xbr+' '
 
+ // }
 
-
+// else {
 
 }
 </script>
