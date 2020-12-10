@@ -57,7 +57,7 @@ animation-play-state: running
 @keyframes send {0%{opacity: 0;border-color: white;}
 100%{opacity: 1;border-color: black}
 }
-#send:hover{transform: rotate(360deg);}
+/* #send:hover{transform: rotate(360deg);} */
 #icon1{padding-top: 20px;padding-bottom: 20px;padding-right: 20px;padding-left: 20px;
     background-color: white;
     position: absolute;
