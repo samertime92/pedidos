@@ -14,7 +14,7 @@
       <div id="romanimarte">
 <h1>ROMANIMARTE</h1>
 <textarea  id="t0" class="tit0"name="name" rows="10" cols="80">HOLA PARA LA QUINTONERIA DE CARRETERIA</textarea>
-<textarea  id="tbr" class="tbr0"name="name" rows="10" cols="80">______</textarea>
+<!-- <textarea  id="tbr" class="tbr0"name="name" rows="10" cols="80"> </textarea> -->
 
  <input id="t1" class="tit1" placeholder="PECHUGA DE POLLO " type="text" name="" value="">
 <br><br>
@@ -28,13 +28,17 @@
 <br>
 <h2 id="send">SEND</h2>
 <p id="p1"> HOLA MICHEL </p>
+<div id="shit" placeholder="fuck">
 
+</div>
 
       </div>
     </div>
 <script type="text/javascript">
+var xbr = document.getElementById('shit').innerHTML;
+
 x0=document.getElementById('t0').value;
- xbr=document.getElementById('tbr').value;
+ // xbr=document.getElementById('tbr').value;
 
 x1=document.getElementById('t1').value;
   x1p=document.getElementById('t1').placeholder;
@@ -128,6 +132,7 @@ function x5check(){
   }
 }
 function scanromanimarte(){
+
   x1;
     x1p;
   x2;
@@ -138,9 +143,9 @@ function scanromanimarte(){
   x4p;
   x5;
   x5p;
-  location.href="https://wa.me/34696273517?text="  + x0  +' '+ xbr +' '+'( '+' '+ x1p +  x1 +' '+' )'+ xbr+' '+ '( '+' '+ x2p +  x2 +' '+' )'+ xbr+' '+'( '+' '+ x3p +  x3 +' '+' )'+ xbr+' '+'( '+' '+ x4p +  x4 +' '+' )'+ xbr+' '+'( '+' '+ x5p +  x5 +' '+' )'+' '
+  // location.href="https://wa.me/34696273517?text="  + x0  +"\n"+ xbr +' '+'( '+' '+ x1p +  x1 +' '+' )'+ xbr +"\n"+ '( '+' '+ x2p +  x2 +' '+' )'+ xbr+"\n"+'( '+' '+ x3p +  x3 +' '+' )'+ xbr+' '+'( '+' '+ x4p +  x4 +' '+' )'+ xbr+' '+'( '+' '+ x5p +  x5 +' '+' )'+' '
 
-
+location.href='https://wa.me/34696273517?text='+encodeURIComponent(x0+'\n'+x1p+' '+x1+'\n'+x2p+' '+x2+'\n'+x3p+' '+x3+'\n'+x4p+' '+x4+'\n'+x5p+' '+x5)
 // if(x1==""){
             // location.href="https://wa.me/34696273517?text="  + x0  +' '+x2p + x2 +' '+xbr+ x3p+ x3 +' '+xbr+ x4p+ x4 +' '+xbr+ x5p+ x5+' '
            // alert(x1)
